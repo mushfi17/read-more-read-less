@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read More & Read Less</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="icon">
+                <img src="images/side image.jpg" width="100px">
+            </div>
+            
+        </div>
+   
+        <div class="card2">
+            <div class="icon">
+                <img src="images/front-end.png">
+            </div>
+            <div class="content">
+                <h3>Web design</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Culpa ipsam blanditiis dolorem? Laudantium earum expedita 
+                    possimus pariatur nisi laborum exercitationem quis, 
+                    a optio facilis dicta! Aspernatur temporibus numquam 
+                    sit repellat quam iste impedit beatae, quo qui blanditiis 
+                    laboriosam sequi ipsam molestias enim iusto doloremque
+                     tenetur perspiciatis, modi et autem exercitationem officiis vero? 
+                     Facere ex sapiente explicabo, commodi unde esse laboriosam, 
+                     ratione molestiae id a doloremque architecto enim voluptatem 
+                     modi nihil praesentium debitis possimus nemo optio obcaecati 
+                     qui autem soluta! Maiores. Lorem, ipsum dolor sit amet consectetur
+                      adipisicing elit. Eum, earum assumenda eos nesciunt soluta expedita 
+                      eveniet. Labore consectetur architecto culpa repudiandae sunt numquam tenetur vero, dolore praesentium debitis! Quaerat, laboriosam.
+                    </p>
+            </div>
+            <a class="more"></a>
+        </div>
+        <hr>
+        <br>
+        <div class="footer">
+            <p> - First Paragraph - Lorem, ipsum dolor sit amet <span>consectetur adipisicing elit</span>. Asperiores pariatur minima eaque iusto, similique nesciunt maiores ducimus quis itaque est!</p>
+            <br><p> - Second Paragraph - Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores pariatur<span> minima eaque iusto, similique nesciunt</span> maiores ducimus quis itaque est!</p>
+            <br><p> - Third Paragraph - <span>Lorem, ipsum dolor sit amet consectetur</span> adipisicing elit. Asperiores pariatur minima eaque iusto, similique nesciunt maiores ducimus quis itaque est!</p>
+            <br><p> - Forth Paragraph - Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Asperiores pariatur minima</span> eaque iusto, similique nesciunt maiores ducimus quis itaque est!</p>
+        </div>
+    </div>
+
+    
+
+
+   <script>
+       let more = document.querySelectorAll('.more');
+       for (let i = 0; i<more.length; i++) {
+           more[i].addEventListener('click', function(){
+            more[i].parentNode.classList.toggle('active')
+           })
+       }
+   </script>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

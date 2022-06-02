@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    /*overflow: hidden;*/
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #c7c7c7;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*width: 1200px;*/
+    flex-wrap: wrap;
+}
+.container .card {
+    position: relative;
+    padding: 20px;
+    margin: 20px;
+    
+}
+.container .card img {
+    width: 250px;
+    height: 350px;
+}
+.container .card2 {
+    position: relative;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    background: #3f3f3f;
+}
+.container .card2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 20px solid transparent;
+    border-top: 20px solid rgb(0, 123, 255);
+    border-right: 20px solid rgb(0, 123, 255);
+}
+.container .card2.active::before {
+    border-top: 20px solid #ff3b7a;
+    border-right: 20px solid #ff3b7a;
+}
+.container .card2 .icon {
+    margin-bottom: 10px;
+    color: rgb(0, 123, 255);
+}
+.container .card2 .icon img {
+    max-width: 90px;
+    
+}
+.container .card2 .content {
+    position: relative;
+    height: 215px;
+    overflow: hidden;
+}
+.container .card2.active .content {
+    height: auto;
+}
+.container .card2.active .content::before {
+    display: none;
+}
+.container .card2 .content::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(transparent, #3f3f3f);
+
+}
+.container .card2 .content h3 {
+    color: #fff;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.container .card2 .content p {
+    font-weight: 300;
+    color: #ccc;
+}
+.container .card2 .more {
+    position: relative;
+    padding: 10px 15px;
+    background: rgb(0, 123, 255);
+    margin-top: 15px;
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #383838;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+.container .card2.active .more {
+    background: #ff3b7a;
+    color: #fff;
+}
+.container .card2 .more::before {
+    content: 'Read More';
+}
+.container .card2.active .more::before {
+    content: 'Read Less';
+}
+.footer {
+    padding: 40px 0;
+}
+.footer p {
+    color: #777;
+}
+.footer p span {
+    color: #1875b1;
+}
+    
